@@ -6,6 +6,7 @@ import Reasons from "./Components/Reasons/Reasons";
 import Plans from "./Components/Plans/Plans";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import JoinUs from "./Components/JoinUs/JoinUs";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Plans/>
       <Testimonials/>
       <JoinUs/>
+      <Footer/>
     </div>
   );
 }

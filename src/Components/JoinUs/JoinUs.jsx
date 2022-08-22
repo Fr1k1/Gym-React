@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./JoinUs.css";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const JoinUs = () => {
   const form = useRef();
@@ -18,6 +18,7 @@ const JoinUs = () => {
       .then(
         (result) => {
           alert("Uspjesno poslano");
+          window.open("index.html", "_self");
         },
         (error) => {
           console.log(error.text);
