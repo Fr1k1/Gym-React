@@ -63,22 +63,40 @@ const Hero = () => {
       <div className="right-h">
         <button className="btn">Join now</button>
 
-        <div className="heart-rate">
+        <motion.div
+          initial={{ right: "-1rem" }}
+          whileInView={{ right: "4rem" }}
+          transition={animacija}
+          className="heart-rate"
+        >
           <img src={Heart} alt="heart_img"></img>
 
           <span>Heart Rate</span>
           <span>150 BPM</span>
-        </div>
+        </motion.div>
+
         <img src={hero_image} alt="hero-img" className="hero-image" />
-        <img src={hero_image_back} alt="hero-img" className="hero-image-back" />
-        <div className="calories">
+        <motion.img
+          initial={{ right: "11rem" }}
+          whileInView={{ right: "20rem" }}
+          transition={animacija}
+          src={hero_image_back}
+          alt="hero-img"
+          className="hero-image-back"
+        />
+        <motion.div
+          initial={{ right: "37rem" }}
+          whileInView={{ right: "28rem" }}
+          transition={animacija}
+          className="calories"
+        >
           <img src={Calories} alt="calories" />
 
           <div>
             <span>Calories burned</span>
             <span>220kcal</span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
